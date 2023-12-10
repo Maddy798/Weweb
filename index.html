@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeWeb</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/assets/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="contactbtn.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar" id="navbar">
+      <a href="/" class="logo" id="logo">WeWeb</a>
+      <ul class="nav-list">
+        <li class="links" onclick="location.href = '#hero'">Home</li>
+        <li class="links" onclick="location.href = '#services'">Services</li>
+        <li class="links" onclick="location.href = '#about-us'">About us</li>
+        <li class="links" onclick="location.href = '#our-work'">Our work</li>
+        <li class="links" onclick="location.href = '#contact-us'">
+          Contact us
+        </li>
+      </ul>
+      <i class="fa-solid fa-bars" id="hamburger"></i>
+    </nav>
+    <div class="hero" id="hero">
+      <div class="information" id="information">
+        <h1 class="heading" id="main-heading">
+          <span class="heading-span">W</span><span class="heading-span">e</span
+          ><span class="heading-span">W</span><span class="heading-span">e</span
+          ><span class="heading-span">b</span>
+        </h1>
+        <p class="sub-heading" id="main-subheading">
+          Your Gateway to Innovative Web Solutions. Unleash the Potential of
+          Your Online Presence with Our Expert Web Development Services. From
+          Intuitive Designs to Robust Functionality, We're Here to Transform
+          Your Ideas into Exceptional Digital Experiences.
+        </p>
+        <a class="contact-button neon-button" id="contactbtn">Hire us</a>
+      </div>
+      <div class="logoanimation">
+        <img
+          src="/assets/JSlogo.webp"
+          alt="jslogo"
+          class="lang-logos"
+          id="JSLOGO"
+        />
+        <img
+          src="/assets/CSSLOGO.png"
+          alt="csslogo"
+          class="lang-logos"
+          id="CSSLOGO"
+        />
+        <img
+          src="/assets/HTMLlogo.png"
+          alt="htmllogo"
+          class="lang-logos"
+          id="HTMLLOGO"
+        />
+      </div>
+    </div>
+    <div class="services" id="services">
+      <h1 class="section-heading">Services</h1>
+      <div class="service-card-container">
+        <div
+          data-aos="zoom-in-right"
+          data-aos-delay="25"
+          data-aos-duration="500"
+          class="service-card left"
+          onmouseenter="servicecardmouseenter(0)"
+          onmouseleave="servicecardmouseleave(0)"
+        >
+          <div class="information">
+            <p>
+              Persuasive web designs contribute to the quality conversion of
+              leads into a potential pond of traffic, elevating the success of
+              your business operations.
+            </p>
+          </div>
+          <div class="profile">
+            <h1 class="heading">Web Development</h1>
+          </div>
+        </div>
+        <div
+          data-aos="zoom-in-left"
+          data-aos-delay="25"
+          data-aos-duration="500"
+          class="service-card right"
+          onmouseenter="servicecardmouseenter(1)"
+          onmouseleave="servicecardmouseleave(1)"
+        >
+          <div class="information">
+            <p>
+              Incorporate the best website designs using high-end User
+              Interaction technologies like Adobe XD, Figma, etc. Launch your
+              own global identity with our experts, who carry great expertise in
+              web design from scratch to end.
+            </p>
+          </div>
+          <div class="profile">
+            <h1 class="heading">Web Design</h1>
+          </div>
+        </div>
+        <div
+          data-aos="zoom-in-right"
+          data-aos-delay="25"
+          data-aos-duration="500"
+          class="service-card left"
+          onmouseenter="servicecardmouseenter(2)"
+          onmouseleave="servicecardmouseleave(2)"
+        >
+          <div class="information">
+            <p>
+              Mobile applications are designed to work on smartphones, tablets,
+              and a variety of other mobile devices. An ideal mobile application
+              will increase the credibility of the company as well as its rating
+              among similar companies.
+            </p>
+          </div>
+          <div class="profile">
+            <h1 class="heading">Mobile App Design</h1>
+          </div>
+        </div>
+        <div
+          data-aos="zoom-in-left"
+          data-aos-delay="25"
+          data-aos-duration="500"
+          class="service-card right"
+          onmouseenter="servicecardmouseenter(3)"
+          onmouseleave="servicecardmouseleave(3)"
+        >
+          <div class="information">
+            <p>
+              Create custom e-commerce websites with excellent APIs and design
+              structures to boost your overall growth.
+            </p>
+          </div>
+          <div class="profile">
+            <h1 class="heading">E-Commerce</h1>
+          </div>
+        </div>
+        <div
+          data-aos="zoom-in-right"
+          data-aos-delay="25"
+          data-aos-duration="500"
+          class="service-card left"
+          onmouseenter="servicecardmouseenter(4)"
+          onmouseleave="servicecardmouseleave(4)"
+        >
+          <div class="information">
+            <p>
+              Graphic designing: Visual communication through images and
+              typography for effective messaging.
+            </p>
+          </div>
+          <div class="profile">
+            <h1 class="heading">Graphic Design</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="about-us-heading" id="about-us">About WeWeb</h1>
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      data-aos-delay="25"
+      data-aos-duration="500"
+      class="about-us"
+    >
+      <img src="https://mattfarley.ca/img/hero-devices.svg" alt="fhf" />
+      <p
+        data-aos="flip-down"
+        data-aos-delay="25"
+        data-aos-duration="500"
+        data-aos-anchor-placement="center-bottom"
+      >
+        Welcome to WeWeb – where innovation meets web excellence. We're not just
+        a web development agency; we're your partners in transforming ideas into
+        compelling online experiences. At WeWeb, we blend creativity with
+        cutting-edge technology to craft websites that stand out in the digital
+        realm. Our team of passionate developers and designers is dedicated to
+        bringing your vision to life, ensuring your online presence is not just
+        functional but leaves a lasting impression. Discover the power of
+        seamless web solutions with WeWeb – where your success is our code.
+      </p>
+    </div>
+    <h1 class="our-work-heading" id="our-work">Our Work</h1>
+    <div class="our-top-clients">
+      <div
+        data-aos="flip-left"
+        data-aos-delay="25"
+        data-aos-duration="500"
+        class="client-card"
+      >
+        <img src="/assets/SHOPFUNKY.png" alt="shopfunky" />
+        <h1>We developed an amazing e-commerce website for shopfunky</h1>
+      </div>
+      <div
+        data-aos="flip-right"
+        data-aos-delay="25"
+        data-aos-duration="500"
+        class="client-card"
+      >
+        <img src="/assets/memekart.png" alt="memekart" />
+        <h1>We developed an amazing e-commerce website for memekart</h1>
+      </div>
+      <div
+        data-aos="flip-up"
+        data-aos-delay="25"
+        data-aos-duration="500"
+        class="client-card"
+      >
+        <img src="/assets/HungryHUB.png" alt="hunryhub" />
+        <h1>We developed an amazing mobile application for hungryhub</h1>
+      </div>
+    </div>
+    <h1 class="languages-heading">We work using</h1>
+    <div class="scroller-container">
+      <div class="scroller" data-speed="fast">
+        <ul class="tag-list scroller__inner">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS</li>
+          <li>ReactJS</li>
+          <li>React Native</li>
+          <li>NodeJS</li>
+          <li>Firebase</li>
+        </ul>
+      </div>
+    </div>
+    <h1 class="Contact-us-heading" id="contact-us">Contact Us</h1>
+
+    <div class="max-w-md mx-auto mb-100" id="contact-form">
+      <div class="relative z-0 w-full mb-5 group">
+        <input
+          type="email"
+          name="floating_email"
+          id="floating_email"
+          class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+          placeholder=" "
+          required
+        />
+        <label
+          for="floating_email"
+          class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >Email address</label
+        >
+      </div>
+      <div class="relative z-0 w-full mb-5 group">
+        <input
+          type="text"
+          name="floating_password"
+          id="floating_password"
+          class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+          placeholder=" "
+          required
+        />
+        <label
+          for="floating_password"
+          class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >Message</label
+        >
+      </div>
+      <div class="grid md:grid-cols-2 md:gap-6">
+        <div class="relative z-0 w-full mb-5 group">
+          <input
+            type="text"
+            name="floating_first_name"
+            id="floating_first_name"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" "
+            required
+          />
+          <label
+            for="floating_first_name"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >First name</label
+          >
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+          <input
+            type="text"
+            name="floating_last_name"
+            id="floating_last_name"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" "
+            required
+          />
+          <label
+            for="floating_last_name"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Last name</label
+          >
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 md:gap-6">
+        <div class="relative z-0 w-full mb-5 group">
+          <input
+            type="tel"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            name="floating_phone"
+            id="floating_phone"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" "
+            required
+          />
+          <label
+            for="floating_phone"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Phone number (123-456-7890)</label
+          >
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+          <input
+            type="text"
+            name="floating_company"
+            id="floating_company"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" "
+            required
+          />
+          <label
+            for="floating_company"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Company (Ex. Google)</label
+          >
+        </div>
+      </div>
+      <button
+        onclick="submitcontact()"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        Submit
+      </button>
+    </div>
+    <footer>
+      <h1>Copyrights© reserved by WeWeb</h1>
+    </footer>
+  </body>
+  <script type="module" src="/app.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function submitcontact() {
+      const email = document.getElementById("floating_email").value;
+      const message = document.getElementById("floating_password").value;
+      const Fname = document.getElementById("floating_first_name").value;
+      const Lname = document.getElementById("floating_last_name").value;
+      const PhoneNumber = document.getElementById("floating_phone").value;
+      const Company = document.getElementById("floating_company").value;
+
+      const request = new XMLHttpRequest();
+      request.open(
+        "POST",
+        "https://discord.com/api/webhooks/1183274194604146808/0JVouiTvFMjkQYOD97uPdOFcV46QsNvUdsog_24tXC0tmXgDq0h-SVhxUwxdTMmRvr_n"
+      );
+
+      request.setRequestHeader("Content-type", "application/json");
+
+      const params = {
+        username: "New Contact",
+        content: `Email: ${email} message: ${message} Fname: ${Fname} Lname: ${Lname} Phonenumber: ${PhoneNumber} Company: ${Company}`,
+      };
+
+      request.send(JSON.stringify(params));
+
+      setInterval(() => {
+        location.reload();
+      }, 1000);
+    }
+
+    const cardprofiles = document.querySelectorAll(".profile");
+    const cardinformation = document.querySelectorAll(".information");
+
+    function servicecardmouseenter(id) {
+      cardprofiles[id].classList.add("cardoutp");
+      cardinformation[id + 1].classList.add("cardouti");
+    }
+
+    function servicecardmouseleave(id) {
+      cardprofiles[id].classList.remove("cardoutp");
+      cardinformation[id + 1].classList.remove("cardouti");
+    }
+  </script>
+</html>

@@ -528,9 +528,6 @@ footer {
     gap: 400px;
     flex-direction: column;
   }
-  .navbar {
-    overflow: hidden;
-  }
   .logoanimation {
     display: none;
   }
@@ -547,15 +544,15 @@ footer {
     flex-direction: column !important;
     background-color: rgb(20, 23, 28);
     width: 100%;
-    height: 90vh;
+    z-index: 1000000000000000;
     position: absolute;
-    right: -150%;
+    right: -100%;
     top: 100%;
     transition: all ease 0.75s;
   }
 
   .nav-closed {
-    right: 0;
+    right: -5% !important;
   }
 
   .links {

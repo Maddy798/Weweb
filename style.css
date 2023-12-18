@@ -244,11 +244,20 @@ html {
   position: relative;
   cursor: pointer;
   border-radius: 12px;
+  color:white;
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url("https://flowndeveloper.com/wp-content/uploads/2022/12/service-pattern.png.webp");
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
+
+
+  
 
 .services .service-card-container .left {
   align-self: flex-start;

